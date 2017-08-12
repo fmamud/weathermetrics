@@ -12,7 +12,7 @@ There is a `getData` endpoint, with two **required** query params:
 
 Example:
 ```sh
-curl -X GET http://localhost:4567/getData\?city\=London,uk\&appid\=ed1b7ad5a03051b50fc19d703a20263f
+curl -X GET http://localhost:4567/getData\?city\=London,uk\&appid\=<YOUR_API_KEY>
 ```
 
 Response:
