@@ -1,6 +1,5 @@
 package com.sme
 
-import groovy.json.JsonSlurper
 import groovyx.net.http.HTTPBuilder
 
 import static groovyx.net.http.ContentType.JSON
@@ -9,8 +8,6 @@ import static spark.Spark.exception
 import static spark.Spark.get
 
 def http = new HTTPBuilder('http://api.openweathermap.org/data/2.5/')
-
-def slurper = new JsonSlurper()
 
 get("/getData", { req, res ->
     res.type('application/json')
